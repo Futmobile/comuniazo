@@ -13,7 +13,7 @@ public class Comuniazo {
 	public static void main(String[] args) {
 	
 		input = new Scanner(System.in);
-		System.out.print("Introduce nombre del jugador: ");
+		System.out.print("Introduce usuario: ");
 		String jugador = input.next();
 		
 		
@@ -35,7 +35,7 @@ public class Comuniazo {
 			e.printStackTrace();
 		}
 		
-		//DISPLAY POINTS
+		//NUMBER OF POINTS
 	
 		WebElement puntos = driver.findElement(By.xpath(".//div[@id='field']/div[@class='info']/div[@class='box']/div[2]/span"));
 		System.out.println("Puntos de " + jugador + " : " + puntos.getText());
