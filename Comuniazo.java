@@ -23,7 +23,7 @@ public class Comuniazo {
 		driver.get("http://www.comuniazo.com");
 		driver.manage().window().maximize();
 			
-		//ACCESING TO MEMBER�S POINTS
+		//ACCESING TO MEMBERS POINTS
 		driver.findElement(By.className("icon-star")).click();
 		driver.findElement(By.name("user")).sendKeys(jugador);
 		driver.findElement(By.id("ajax-send")).click();
@@ -35,7 +35,7 @@ public class Comuniazo {
 			e.printStackTrace();
 		}
 		
-		//NUMBER OF POINTS
+		//DISPLAY POINTS
 	
 		WebElement puntos = driver.findElement(By.xpath(".//div[@id='field']/div[@class='info']/div[@class='box']/div[2]/span"));
 		System.out.println("Puntos de " + jugador + " : " + puntos.getText());
